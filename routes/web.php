@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [PageController::class,'welcome']);
-Route::get('/next', [PageController::class,'nextpage']);
+Route::get('/create', [PageController::class,'nextpage']);
+Route::post('/create', [PageController::class,'store']);
+Route::get('/list', [PageController::class,'list']);
 
 
